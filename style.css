@@ -1,0 +1,56 @@
+body {
+    background-color: grey;
+}
+
+.navcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 103px;
+    width: 99vw;
+    border: 3px solid black;
+}
+
+.navitem-1 {
+    width: 200px;
+    height: 100px;
+    border: 3px solid black;
+}
+
+.navitem-2 {
+    width: 200px;
+    height: 100px;
+    border: 3px solid black;
+}
+.navitem-3 {
+    width: 200px;
+    height: 100px;
+    border: 3px solid black;
+}
+.navitem-4 {
+    width: 200px;
+    height: 100px;
+    border: 3px solid black;
+}
+.navitem-5 {
+    width: 200px;
+    height: 100px;
+    border: 3px solid black;
+}
+.navitem-6 {
+    width: 200px;
+    height: 100px;
+    border: 3px solid black;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: 3px solid white;
+}
