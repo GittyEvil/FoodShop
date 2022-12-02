@@ -1,5 +1,6 @@
 body {
     background-color: grey;
+    
 }
 
 .navcontainer {
@@ -47,10 +48,12 @@ body {
 
 .body {
     display: flex;
+    flex-direction: column;
     border: 3px solid black;
-    width: 1900px;
+    width: 99vw;
     height: 700px;
     justify-content: center;
+    align-items: center;
 }
 
 .displaySite {
@@ -60,14 +63,21 @@ body {
     height: 100px;
 }
 
+.Infobody {
+    position: relative;
+    border: 3px solid black;
+    width: 700px;
+    height: 500px;
+}
+
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     height: 150px;
-    width: 1915px;
+    width: 100vw;
     background-color: black;
     color: white;
     text-align: center;
-    border: 3px solid white;
+
 }
