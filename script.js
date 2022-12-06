@@ -1,4 +1,4 @@
-var slideIndex = 0;
+var slideIndex = 1;
 var x = document.getElementsByClassName("slideshow");
 
 function slideShow() {

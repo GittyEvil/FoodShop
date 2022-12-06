@@ -1,13 +1,17 @@
 body {
     background-color: grey;
+    overflow-x: hidden;
     
 }
+body::-webkit-scrollbar {
+    display: none;
+  }
 
 .navcontainer {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    height: 103px;
+    height: 105px;
     width: 99vw;
 }
 
@@ -18,24 +22,36 @@ body {
 }
 
 .navitem-2 {
+    display: flex;
     width: 200px;
     height: 100px;
     border: 3px solid black;
+    align-items: center;
+    justify-content: center;
 }
 .navitem-3 {
+    display: flex;
     width: 200px;
     height: 100px;
     border: 3px solid black;
+    align-items: center;
+    justify-content: center;
 }
 .navitem-4 {
+    display: flex;
     width: 200px;
     height: 100px;
     border: 3px solid black;
+    align-items: center;
+    justify-content: center;
 }
 .navitem-5 {
+    display: flex;
     width: 200px;
     height: 100px;
     border: 3px solid black;
+    align-items: center;
+    justify-content: center;
 }
 .navitem-6 {
     display: flex;
@@ -51,7 +67,7 @@ body {
     flex-direction: column;
     border: 3px solid black;
     width: 99vw;
-    height: 700px;
+    height: 1000px;
     justify-content: center;
     align-items: center;
 }
@@ -66,20 +82,38 @@ body {
 .Infobody {
     position: relative;
     border: 3px solid black;
-    width: 700px;
-    height: 500px;
+    width: 1000px;
+    height: 600px;
 }
 
 .footer {
-    position: fixed;
+    display: flex;
+    position: relative;
     left: 0;
     bottom: 0;
-    height: 150px;
-    width: 100vw;
+    height: 300px;
+    width: 99.3vw;
     background-color: rgb(8, 8, 8,0.5);
     color: white;
     text-align: center;
+    justify-content: space-between;
+}
 
+.footitem1 {
+    width: 400px;
+    height: 240px;
+}
+.footitem2 {
+    width: 400px;
+    height: 240px;
+}
+.footitem3 {
+    width: 400px;
+    height: 240px;
+}
+.footitem4 {
+    width: 400px;
+    height: 240px;
 }
 
 .slideshow {
