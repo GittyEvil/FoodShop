@@ -2,6 +2,7 @@ body {
     background-color: black;
     overflow-x: hidden;
     margin: 0;
+    height: 2000px;
     
 }
 body::-webkit-scrollbar {
@@ -67,10 +68,9 @@ a {
 
 .body {
     display: flex;
-    border: 3px solid black;
     flex-direction: column;
     width: 100vw;
-    height: 1000px;
+    height: 1800px;
     justify-content: center;
     align-items: center;
     background-image:url("/images/backgroundimage.png");
@@ -82,9 +82,9 @@ a {
 
 .displaySite {
     text-align: center;
-    border: 3px solid black;
-    width: 200px;
-    height: 100px;  
+    width: 300px;
+    height: 200px; 
+    color: white; 
 }
 
 .footer {
@@ -126,14 +126,96 @@ a {
 .Infobody {
     position: relative;
     border: 3px solid black;
-    width: 1000px;
-    height: 600px;
+    width: 1200px;
+    height: 1000px;
+    background-color: rgb(2, 2, 2,0.5);
+    filter:blur(5px);
+    border-radius: 25px;
+}
+/* över ligger index sidans css*/
+.Menubox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1800px;
+    height: 1150px;
+    background-color: rgb(5, 5, 5,0.8);
+    border-radius: 25px;
     
 }
 
-.Menubox {
-    width: 1800px;
-    height: 800px;
-    border: 3px solid black;
-
+.menuitem1 {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 30%;
+    padding-bottom: 20%; 
+    margin-bottom: 2%;
 }
+
+.menuitem2 {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    width: 30%;
+    padding-bottom: 20%; 
+    margin-bottom: 2%; 
+}
+
+.menuitem3 {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    width: 30%;
+    padding-bottom: 20%; 
+    margin-bottom: 2%;
+}
+
+.menuitem4 {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    width: 30%;
+    padding-bottom: 20%; 
+    margin-bottom: 2%;
+}
+
+.menuitem5 {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    width: 30%;
+    padding-bottom: 20%; 
+    margin-bottom: 2%;
+}
+
+.menuitem6 {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    width: 30%;
+    padding-bottom: 20%; 
+    margin-bottom: 2%;
+}
+
+/*allt över ligger menu sidans css */
+
+.contactbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 3px solid black;
+    width: 1800px;
+    height: 1150px;
+    background-color: rgb(5, 5, 5,0.8);
+    border-radius: 25px;
+}
+
+
+
+/*allt över är contact sidans css */ 
