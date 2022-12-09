@@ -221,7 +221,30 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
 }
 
+.medlemskapsinfo {
+    color: white;
+}
 
 /*allt över är contact sidans css */ 
+
+.Orderbox {
+    display: flex;
+    border: 3px solid black;
+    width: 1800px;
+    height: 1150px;
+    background-color: rgb(5, 5, 5,0.8);
+    border-radius: 25px;
+}
+
+.orderlist {
+    height: 600px;
+    width: 500px;
+    border: 3px solid white;
+}
+
+/*all över är för contact sidans css*/
+
+
