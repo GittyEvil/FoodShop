@@ -202,7 +202,61 @@ a {
     padding-bottom: 20%; 
     margin-bottom: 2%;
 }
+/* för att skapa popup*/
+/*knapp*/
+.button {
+    position: relative;
+  }
+  /*detta targetar alla img inuti diven button*/
+  .button > img {
+    display: inline-block;
+   
+    color: #fff;
+    padding: 0.4em 0.6em;
+    font-size: 1.3em;
+   
+  }
+  /* section används för att dela upp text*/ 
+  .button section {
+    display: none;
+    position: absolute;
+    top: 2em;
+    left: 32em;
+    padding: 20px;
+    margin: 0;
+    border: 5px solid #fd0;
+    background: white;
+    border-radius: 1em;
+  }
+  /* targettar alla p tags inom section*/ 
+  .button section > p {
+    display:block;
+    text-align:center;
+    }
+  /*targettar båda classer bara */ 
+  .button .parentPic {
+    display: block;
+    border-radius: 0.8em;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .button:hover section {
+    display: inline-flex;
+    top:0px;
+  }
 
+  .speech {  
+    position: relative;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    line-height: 20px;
+    background-color:  white;
+    border-radius: 30px;
+  }
+
+  
 /*allt över ligger menu sidans css */
 
 .contactbox {
@@ -245,12 +299,15 @@ form {
     width: 500px;
     border: 3px solid white;
     color: white;
+    margin: 4px;
+    border-radius: 25px;
 }
 
 .beställning {
     height: 300px;
     width: 400px;
     border: 3px solid white;
+    border-radius: 25px;
 }
 
 /*all över är för order sidans css*/
