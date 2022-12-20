@@ -546,6 +546,17 @@ form {
     border-radius: 25px;
 }
 
+.orderlist1 {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  width: 500px;
+  border: 3px solid white;
+  color: white;
+  margin: 4px;
+  border-radius: 25px;
+}
+
 .beställning {
     height: 300px;
     width: 400px;
