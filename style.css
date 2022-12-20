@@ -504,6 +504,7 @@ input[type="checkbox"]{
 
 .contactbox {
     display: flex;
+    text-align: center;
     flex-direction: column;
     align-items: center;
     border: 3px solid black;
@@ -528,22 +529,23 @@ form {
 /*allt över är contact sidans css */ 
 
 .Orderbox {
-    display: flex;
-    border: 3px solid black;
-    width: 1800px;
-    height: 1150px;
-    background-color: rgb(5, 5, 5,0.8);
-    border-radius: 25px;
-    justify-content: space-between;
+  display: flex;
+  align-items:baseline;
+  border: 3px solid black;
+  width: 1800px;
+  height: 1150px;
+  background-color: rgb(5, 5, 5,0.8);
+  border-radius: 25px;
+  justify-content: space-around;
 }
 
 .orderlist {
-    height: 600px;
-    width: 500px;
-    border: 3px solid white;
-    color: white;
-    margin: 4px;
-    border-radius: 25px;
+  height: 600px;
+  width: 500px;
+  border: 3px solid white;
+  color: white;
+  margin: 4px;
+  border-radius: 25px;
 }
 
 .orderlist1 {
@@ -558,10 +560,10 @@ form {
 }
 
 .beställning {
-    height: 300px;
-    width: 400px;
-    border: 3px solid white;
-    border-radius: 25px;
+  height: 300px;
+  width: 400px;
+  border: 3px solid white;
+  border-radius: 25px;
 }
 
 /*all över är för order sidans css*/
