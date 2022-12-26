@@ -49,21 +49,57 @@
              </p>
             </div>
             
-            <form>
-                <label for="fnamn">förnamn</label>
-                <input type="text" id="enamn" name="ename">
-                <label for="enamn">efternamn</label>
-                <input type="text" id="fnamn" name="fname">
-                <label for="gmail">Gmail</label>
-                <input type="text" id="gmail" name="gmail">
-                <label for="telfon">Telefonnummer</label>
-                <input type="text" id="telfon" name="telfon">
-                <input type="checkbox" id="medlem" name="medlem" value="Medlem">
-                <label for="medlem">Medlemskap</label>
-                <input type="checkbox" id="återställ" name="återställ" value="återställ">
-                <label for="återställ">Återställ</label>
-                <input type="submit" id="skicka" name="skicka" value="skicka">
-            </form>
+            <section id="contact">
+  
+                <div class="contact-wrapper">
+                
+                <!-- Left contact page --> 
+                  
+                  <form id="contact-form" class="form-horizontal" role="form">
+                     
+                    <div class="form-group">
+                      <div class="col-sm-12">
+                        <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                      </div>
+                    </div>
+              
+                    <div class="form-group">
+                      <div class="col-sm-12">
+                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                      </div>
+                    </div>
+              
+                    <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+                    
+                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                      <div class="alt-send-button">
+                        <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                      </div>
+                    
+                    </button>
+                    
+                  </form>
+                  
+                <!-- Left contact page --> 
+                  
+                    <div class="direct-contact-container">
+              
+                      <ul class="contact-list">
+                        <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">City, State</span></i></li>
+                        
+                        <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555">(212) 555-2368</a></span></i></li>
+                        
+                        <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#">hitmeup@gmail.com</a></span></i></li>
+                        
+                      </ul>
+              
+                      
+                    </div>
+                  
+                </div>
+                
+              </section>  
+                 
         </div>
     </div>
 
@@ -116,7 +152,7 @@
         </div>
         <div class="footitem4">
             <p>För kunden:</p>
-            <p>Registrera dig här!</p>
+            <a href="#Förnamn">Registrera dig här!</a>
             <p>Varukorg</p>
             <p>Profil</p>
         </div>
