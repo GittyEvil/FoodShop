@@ -445,6 +445,9 @@ input[type="checkbox"]{
     padding-bottom: 20%; 
     margin-bottom: 2%;
 }
+
+
+
 /* för att skapa popup*/
 /*knapp*/
 .button {
@@ -523,7 +526,7 @@ form {
 }
 
 .medlemskapsinfo {
-    color: rgb(253, 253, 253,0.5);
+    color: rgb(253, 253, 253);
 }
 
 #contact {
@@ -579,7 +582,7 @@ form {
 .direct-contact-container {
   max-width: 400px;
   height: 200px;
-  border: 3px solid white;
+  margin-top: 200px;
   display: flex;
   justify-content: center;
 }
@@ -593,7 +596,7 @@ form {
 
 .list-item {
   line-height: 4;
-  color: #aaa;
+  color: rgb(255, 255, 255);
 }
 
 .contact-text {
