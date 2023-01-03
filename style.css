@@ -377,156 +377,148 @@ input[type="checkbox"]{
 }
 /* över ligger index sidans css*/
 .Menubox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 1800px;
-    height: 1150px;
-    background-color: rgb(5, 5, 5,0.8);
-    border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 1800px;
+  height: 1150px;
+  background-color: rgb(5, 5, 5,0.8);
+  border-radius: 25px;
     
 }
 
 .menuitem1 {
-    display: flex;
-    justify-content: center;
-    height: 200px;
-    width: 30%;
-    padding-bottom: 20%; 
-    margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  width: 30%;
+  padding-bottom: 20%; 
+  margin-bottom: 2%;
 }
 
 .menuitem2 {
-    display: flex;
-    justify-content: center;
-    width: 200px;
-    height: 200px;
-    width: 30%;
-    padding-bottom: 20%; 
-    margin-bottom: 2%; 
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  width: 30%;
+  padding-bottom: 20%; 
+  margin-bottom: 2%; 
 }
 
 .menuitem3 {
-    display: flex;
-    justify-content: center;
-    width: 200px;
-    height: 200px;
-    width: 30%;
-    padding-bottom: 20%; 
-    margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  width: 30%;
+  padding-bottom: 20%; 
+  margin-bottom: 2%;
 }
 
 .menuitem4 {
-    display: flex;
-    justify-content: center;
-    width: 200px;
-    height: 200px;
-    width: 30%;
-    padding-bottom: 20%; 
-    margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  width: 30%;
+  padding-bottom: 20%; 
+  margin-bottom: 2%;
 }
 
 .menuitem5 {
-    display: flex;
-    justify-content: center;
-    width: 200px;
-    height: 200px;
-    width: 30%;
-    padding-bottom: 20%; 
-    margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  width: 30%;
+  padding-bottom: 20%; 
+  margin-bottom: 2%;
 }
 
 .menuitem6 {
-    display: flex;
-    justify-content: center;
-    width: 200px;
-    height: 200px;
-    width: 30%;
-    padding-bottom: 20%; 
-    margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  width: 30%;
+  padding-bottom: 20%; 
+  margin-bottom: 2%;
 }
-
-
 
 /* för att skapa popup*/
 /*knapp*/
 .button {
-    position: relative;
-  }
-  /*detta targetar alla img inuti diven button*/
-  .button > img {
-    display: inline-block;
-   
-    color: #fff;
-    padding: 0.4em 0.6em;
-    font-size: 1.3em;
-   
-  }
-  /* section används för att dela upp text*/ 
-  .button section {
-    display: none;
-    position: absolute;
-    top: 2em;
-    left: 32em;
-    padding: 20px;
-    margin: 0;
-    border: 5px solid #fd0;
-    background: white;
-    border-radius: 1em;
-  }
-  /* targettar alla p tags inom section*/ 
-  .button section > p {
-    display:block;
-    text-align:center;
-    }
-  /*targettar båda classer bara */ 
-  .button .parentPic {
-    display: block;
-    border-radius: 0.8em;
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .button:hover section {
-    display: inline-flex;
-    top:0px;
-  }
+  position: relative;
+}
 
-  .speech {  
-    position: relative;
-    width: 300px;
-    height: 400px;
-    text-align: center;
-    line-height: 20px;
-    background-color:  white;
-    border-radius: 30px;
-  }
+  /*detta targetar alla img inuti diven button*/
+.button > img {
+  display: inline-block;
+  color: #fff;
+  padding: 0.4em 0.6em;
+  font-size: 1.3em; 
+}
+
+/* section används för att dela upp text*/ 
+.button section {
+display: none;
+position: absolute;
+top: 2em;
+left: 32em;
+padding: 20px;
+margin: 0;
+border: 5px solid #fd0;
+background: white;
+border-radius: 1em;
+}
+
+/* targettar alla p tags inom section*/ 
+.button section > p {
+display:block;
+text-align:center;
+}  
+
+.button:hover section {
+  display: inline-flex;
+  top:0px;
+}
+
+.speech {  
+  position: relative;
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  line-height: 20px;
+  background-color:  white;
+  border-radius: 30px;
+}
 
   
 /*allt över ligger menu sidans css */
 
 .contactbox {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid black;
-    width: 1800px;
-    height: 1150px;
-    background-color: rgb(5, 5, 5,0.8);
-    border-radius: 25px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid black;
+  width: 1800px;
+  height: 1150px;
+  background-color: rgb(5, 5, 5,0.8);
+  border-radius: 25px;
 }
 
 form {
-    margin: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
+  margin: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
 }
 
 .medlemskapsinfo {
-    color: rgb(253, 253, 253);
+  color: rgb(253, 253, 253);
 }
 
 #contact {
@@ -558,13 +550,13 @@ form {
   height: 54px;
   width: 400px;
   overflow: hidden;
-  transition: all .2s ease-in-out;
+  
 }
 
 .alt-send-button {
   width: 400px;
   height: 34px;
-  transition: all .2s ease-in-out;
+
 }
 
 .send-text {
@@ -574,9 +566,6 @@ form {
   letter-spacing: 2px;
 }
 
-.alt-send-button:hover {
-  transform: translate3d(0px, -29px, 0px);
-}
 
 /* Begin Right Contact Page */
 .direct-contact-container {
