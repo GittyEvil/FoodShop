@@ -144,6 +144,7 @@ html,body{
 }
 .wrapper{
   display: inline-flex;
+  
 }
 .wrapper .icon{
   margin: 0 20px;
