@@ -446,6 +446,37 @@ input[type="checkbox"]{
   margin-bottom: 2%;
 }
 
+.menuitem1:hover {
+  background-color: black;
+  filter: blur(25px);
+}
+
+.menuitem2:hover {
+  background-color: black;
+  filter: blur(25px);
+}
+
+.menuitem3:hover {
+  background-color: black;
+  filter: blur(25px);
+}
+
+.menuitem4:hover {
+  background-color: black;
+  filter: blur(25px);
+}
+
+.menuitem5:hover {
+  background-color: black;
+  filter: blur(25px);
+}
+
+.menuitem6:hover {
+  background-color: black;
+  filter: blur(25px);
+}
+
+
 /* för att skapa popup*/
 /*knapp*/
 .button {
