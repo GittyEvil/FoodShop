@@ -413,6 +413,7 @@ input[type="checkbox"]{
   width: 30%;
   padding-bottom: 20%; 
   margin-bottom: 2%;
+  filter: opacity(2px);
 }
 
 .menuitem2 {
@@ -422,7 +423,8 @@ input[type="checkbox"]{
   height: 200px;
   width: 30%;
   padding-bottom: 20%; 
-  margin-bottom: 2%; 
+  margin-bottom: 2%;
+  filter: opacity(2px);
 }
 
 .menuitem3 {
@@ -465,34 +467,59 @@ input[type="checkbox"]{
   margin-bottom: 2%;
 }
 
-.menuitem1:hover {
-  background-color: black;
-  filter: blur(25px);
+.display {
+  opacity: 0;
+  margin-top: 1,5%;
+  height: 400px;
+  width: 370px;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  z-index: 1;
 }
 
-.menuitem2:hover {
-  background-color: black;
-  filter: blur(25px);
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.menuitem3:hover {
-  background-color: black;
-  filter: blur(25px);
+.menuitem1:hover .display{
+  opacity: 1;
+  background-color: rgb(0, 0, 0,0.5);
 }
 
-.menuitem4:hover {
-  background-color: black;
-  filter: blur(25px);
+.menuitem2:hover .display {
+  opacity: 1;
+  background-color: rgb(0, 0, 0,0.5);
 }
 
-.menuitem5:hover {
-  background-color: black;
-  filter: blur(25px);
+.menuitem3:hover .display{
+  opacity: 1;
+  background-color: rgb(0, 0, 0,0.5);
 }
 
-.menuitem6:hover {
-  background-color: black;
-  filter: blur(25px);
+.menuitem4:hover .display{
+  opacity: 1;
+  background-color: rgb(0, 0, 0,0.5);
+}
+
+.menuitem5:hover .display{
+  opacity: 1;
+  background-color: rgb(0, 0, 0,0.5);
+}
+
+.menuitem6:hover .display{
+  opacity: 1;
+  background-color: rgb(0, 0, 0,0.5);
 }
 
 
