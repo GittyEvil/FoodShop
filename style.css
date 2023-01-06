@@ -3,8 +3,12 @@ body {
     overflow-x: hidden;
     margin: 0;
     height: 2000px;
-    
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
 }
+/*tar bort skrollbaren(men går fortfarande att skrolla)*/
 /* för chrome etc*/
 body::-webkit-scrollbar {
   display: none;
@@ -83,7 +87,7 @@ a {
     align-items: center;
     justify-content: center;
 }
-
+/*själva kroppen för varje sida*/
 .body {
     display: flex;
     flex-direction: column;
@@ -97,14 +101,14 @@ a {
     filter: opacity(5px);
     
 }
-
+/*titel för typa alla sidor*/
 .displaySite {
     text-align: center;
     width: 300px;
     height: 200px; 
     color: white; 
 }
-
+/*footern*/
 .footer {
     display: flex;
     left: 0;
@@ -135,18 +139,15 @@ a {
     width: 400px;
     height: 240px;
 }
-
-html,body{
-  display: grid;
-  height: 100%;
-  width: 100%;
-  place-items: center;
-}
+/*container till social media knapparna*/
 .wrapper{
-  display: inline-flex;
-  
+  background-color: rgb(8, 8, 8,0.8);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
-.wrapper .icon{
+/*för ikonerna*/
+.icon{
   margin: 0 20px;
   text-align: center;
   cursor: pointer;
@@ -156,8 +157,8 @@ html,body{
   flex-direction: column;
   position: relative;
   z-index: 2;
-  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+/*stylar konerna*/
 .wrapper .icon span{
   display: block;
   height: 60px;
@@ -169,10 +170,12 @@ html,body{
   box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+/*ändrar stilen av ikonerna*/
 .wrapper .icon span i{
   line-height: 60px;
   font-size: 25px;
 }
+/*text som kommer upp när man hovrar över ikonerna*/
 .wrapper .icon .tooltip{
   position: absolute;
   top: 0;
@@ -188,11 +191,13 @@ html,body{
   box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+/*hover effekt */
 .wrapper .icon:hover .tooltip{
   top: -70px;
   opacity: 1;
   pointer-events: auto;
 }
+/*detta är triangeln som är under text när man hovrar*/
 .icon .tooltip:before{
   position: absolute;
   content: "";
@@ -204,23 +209,19 @@ html,body{
   transform: translateX(-50%) rotate(45deg);
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.wrapper .icon:hover span{
-  color: #fff;
-}
-.wrapper .icon:hover span,
-.wrapper .icon:hover .tooltip{
-  text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
-}
+/*bestämmer färg för respektive ikon*/
 .wrapper .facebook:hover span,
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip:before{
   background: #3B5999;
 }
+
 .wrapper .twitter:hover span,
 .wrapper .twitter:hover .tooltip,
 .wrapper .twitter:hover .tooltip:before{
   background: #46C1F6;
 }
+
 .wrapper .instagram:hover span,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip:before{
@@ -229,10 +230,7 @@ html,body{
 
 /* allt över är för alla hemsidor(grund)*/
 
-.slideshow {
-    display:block;
-}
-
+/*container för index sian*/
 .Infobody {
     display: flex;
     align-items: center;
@@ -243,8 +241,8 @@ html,body{
     background-color: rgb(2, 2, 2,0.5);
     border-radius: 25px;
 }
-
-.blog-card{
+/*info blockets container*/
+.info-card{
   position: absolute;
   height: 700px;
   width: 95%;
@@ -254,7 +252,7 @@ html,body{
   background: rgb(255, 255, 255,0.8);
   box-shadow: 0px 10px 50px rgba(252,56,56,.3);
 }
-
+/*sidorna som visas*/
 .inner-part{
   position: absolute;
   display: flex;
@@ -263,7 +261,7 @@ html,body{
   justify-content: center;
   padding: 0 25px;
 }
-
+/*bestämmer bilden i sidorna*/
 .inner-part .img{
   height: 260px;
   width: 260px;
@@ -273,14 +271,7 @@ html,body{
   box-shadow: 2px 3px 15px rgba(252,56,56,.1);
 }
 
-#imgTap:checked ~ .inner-part .img{
-  height: 370px;
-  width: 850px;
-  z-index: 99;
-  margin-top: 10px;
-  transition: .3s .2s ease-in;
-}
-
+/*ändrar bilden*/
 .img img{
   height: 100%;
   width: 100%;
@@ -289,25 +280,22 @@ html,body{
   opacity: 0;
   transition: .6s;
 }
-
+/*snygg animation för bild*/
 #tap-1:checked ~ .inner-part .img-1,
 #tap-2:checked ~ .inner-part .img-2{
   opacity: 1;
   transition-delay: .2s;
 }
-
+/*container för själva texten i sidan*/
 .content{
   padding: 0 20px 0 35px;
   width: 530px;
-  margin-left: 50px;
+  margin-left: 100px;
   opacity: 0;
   transition: .6s;
 }
 
-#imgTap:checked ~ .inner-part .content{
-  display: none;
-}
-
+/*animation för texten*/
 #tap-1:checked ~ .inner-part .content-1,
 #tap-2:checked ~ .inner-part .content-2{
   opacity: 1;
@@ -315,30 +303,23 @@ html,body{
   z-index: 100;
   transition-delay: .3s;
 }
-
-.content span{
-  display: block;
-  color: #7b7992;
-  margin-bottom: 15px;
-  font-size: 22px;
-  font-weight: 500
-}
-
+/*ändrar titeln*/
 .content .title{
   font-size: 30px;
   font-weight: 700;
   color: #0d0925;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
 }
-
+/*ändrar texten*/
 .content .text{
   color: #4e4a67;
   font-size: 19px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
+  margin-left: 50px;
   line-height: 1.5em;
   text-align: justify;
 }
-
+/*stylar om knappen(den gör inget nu)*/
 .content button{
   display: inline-flex;
   padding: 15px 20px;
@@ -350,7 +331,7 @@ html,body{
   cursor: pointer;
   background-color: black;
 }
-
+/*knapparna som man byter sida med*/
 .sliders{
   position: absolute;
   bottom: 25px;
@@ -358,7 +339,7 @@ html,body{
   transform: translateX(-50%);
   z-index: 12;
 }
-
+/*själva knapparna*/
 .sliders .tap{
   position: relative;
   height: 10px;
@@ -369,9 +350,11 @@ html,body{
   margin: 0 3px;
   cursor: pointer;
 }
+/*ändrar färg, visar användare att du står över knappen*/
 .sliders .tap:hover{
   background: #cccccc;
 }
+/*visar vilken sida man står på gör den svart*/
 .sliders .tap:before{
   position: absolute;
   content: '';
@@ -385,16 +368,21 @@ html,body{
   transition: transform .6s;
   transform-origin: left;
 }
+/*måste gömma knapparna*/
 input[type="radio"],
 input[type="checkbox"]{
   display: none;
 }
+/*lägger på en animation*/
 #tap-1:checked ~ .sliders .tap-1:before,
 #tap-2:checked ~ .sliders .tap-2:before{
   transform: scaleX(1);
   width: 100%;
 }
+
 /* över ligger index sidans css*/
+
+/*meny container*/
 .Menubox {
   display: flex;
   flex-wrap: wrap;
@@ -466,7 +454,7 @@ input[type="checkbox"]{
   padding-bottom: 20%; 
   margin-bottom: 2%;
 }
-
+/*det som visas när man hovrar över bilderna*/
 .display {
   opacity: 0;
   margin-top: 1,5%;
@@ -478,7 +466,7 @@ input[type="checkbox"]{
   align-items: center;
   z-index: 1;
 }
-
+/*stylar texten*/
 .text {
   color: white;
   font-size: 20px;
@@ -491,7 +479,7 @@ input[type="checkbox"]{
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
+/*när man hovrar över bilderna*/
 .menuitem1:hover .display{
   opacity: 1;
   background-color: rgb(0, 0, 0,0.5);
@@ -522,70 +510,21 @@ input[type="checkbox"]{
   background-color: rgb(0, 0, 0,0.5);
 }
 
-
-/* för att skapa popup*/
-/*knapp*/
-.button {
-  position: relative;
-}
-
-  /*detta targetar alla img inuti diven button*/
-.button > img {
-  display: inline-block;
-  color: #fff;
-  padding: 0.4em 0.6em;
-  font-size: 1.3em; 
-}
-
-/* section används för att dela upp text*/ 
-.button section {
-display: none;
-position: absolute;
-top: 2em;
-left: 32em;
-padding: 20px;
-margin: 0;
-border: 5px solid #fd0;
-background: white;
-border-radius: 1em;
-}
-
-/* targettar alla p tags inom section*/ 
-.button section > p {
-display:block;
-text-align:center;
-}  
-
-.button:hover section {
-  display: inline-flex;
-  top:0px;
-}
-
-.speech {  
-  position: relative;
-  width: 300px;
-  height: 400px;
-  text-align: center;
-  line-height: 20px;
-  background-color:  white;
-  border-radius: 30px;
-}
-
   
 /*allt över ligger menu sidans css */
 
+/*container för kontakt sidan*/
 .contactbox {
   display: flex;
   text-align: center;
   flex-direction: column;
   align-items: center;
-  border: 3px solid black;
   width: 1800px;
   height: 1150px;
   background-color: rgb(5, 5, 5,0.8);
   border-radius: 25px;
 }
-
+/*ändrar stilen för forms*/
 form {
   margin: 200px;
   display: flex;
@@ -593,16 +532,11 @@ form {
   align-items: center;
   color: white;
 }
-
+/*infon om medlemskap*/
 .medlemskapsinfo {
   color: rgb(253, 253, 253);
 }
-
-#contact {
-  width: 100%;
-  height: 100%;
-}
-
+/*container för själva kontakt delen*/
 .contact-wrapper {
   display: flex;
   flex-direction: row;
@@ -613,15 +547,8 @@ form {
   max-width: 840px;
 }
 
-/* Left contact page */
-.form-horizontal {
-  max-width: 400px;
-  font-family: 'Lato';
-  font-weight: 400;
-}
-
+/*bestämmer storlek för forms och knapp*/
 .form-control, 
-
 .send-button {
   margin-top: 15px;
   height: 54px;
@@ -630,12 +557,7 @@ form {
   
 }
 
-.alt-send-button {
-  width: 400px;
-  height: 34px;
-
-}
-
+/*texten*/
 .send-text {
   display: block;
   margin-top: 10px;
@@ -644,7 +566,7 @@ form {
 }
 
 
-/* Begin Right Contact Page */
+/* container för att kontakta direkt */
 .direct-contact-container {
   max-width: 400px;
   height: 200px;
@@ -653,7 +575,7 @@ form {
   justify-content: center;
 }
 
-/* Location, Phone, Email Section */
+/*lista för kontakterna*/
 .contact-list {
   list-style-type: none;
   margin-left: -50px;
@@ -664,25 +586,19 @@ form {
   line-height: 4;
   color: rgb(255, 255, 255);
 }
-
+/*texten*/
 .contact-text {
   font: 300 18px 'Lato', sans-serif;
   letter-spacing: 1.9px;
   color: #bbb;
 }
 
-.contact-text a {
-  color: #bbb;
-  text-decoration: none;
-  transition-duration: 0.2s;
-}
-
 /*allt över är contact sidans css */ 
 
+/*container för order sidan*/
 .Orderbox {
   display: flex;
   align-items:center;
-  border: 3px solid black;
   width: 1800px;
   height: 1150px;
   background-color: rgb(5, 5, 5,0.8);
@@ -690,6 +606,7 @@ form {
   justify-content: space-around;
 }
 
+/*vänstra blocket, visar vad som beställts*/
 .orderlist {
   height: 600px;
   width: 500px;
@@ -698,7 +615,7 @@ form {
   margin: 4px;
   border-radius: 25px;
 }
-
+/*högra blocket*/
 .orderlist1 {
   display: flex;
   justify-content: center;
@@ -710,6 +627,7 @@ form {
   border-radius: 25px;
 }
 
+/*boxen för bilderna(visar bild på det man beställt)*/
 .beställning {
   height: 300px;
   width: 400px;
