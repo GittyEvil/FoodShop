@@ -40,104 +40,104 @@ a {
     text-align: center;
     height: 105px;
     width: 100vw;
+    align-items: center;
 }
 
 .navitem-1 {
-    width: 200px;
-    height: 100px;
-
+  display: flex;
+  width: 200px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
 }
 
 .navitem-2 {
-    display: flex;
-    width: 200px;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  width: 200px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
 }
 
 .navitem-3 {
-    display: flex;
-    width: 200px;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
+  width: 300px;
+  height: 100px;
 }
 
 .navitem-4 {
-    display: flex;
-    width: 200px;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  width: 200px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
 }
 
 .navitem-5 {
-    display: flex;
-    width: 200px;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  width: 200px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
 }
 
 .navitem-6 {
-    display: flex;
-    width: 200px;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  width: 200px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
 }
 /*själva kroppen för varje sida*/
 .body {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 1800px;
-    justify-content: center;
-    align-items: center;
-    background-image:url("/images/backgroundimage.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: opacity(5px);
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 1800px;
+  justify-content: center;
+  align-items: center;
+  background-image:url("/images/backgroundimage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: opacity(5px);
     
 }
 /*titel för typa alla sidor*/
 .displaySite {
-    text-align: center;
-    width: 300px;
-    height: 200px; 
-    color: white; 
+  text-align: center;
+  width: 300px;
+  height: 200px; 
+  color: white; 
 }
 /*footern*/
 .footer {
-    display: flex;
-    left: 0;
-    bottom: 0;
-    height: 300px;
-    width: 100vw;
-    background-color: rgb(8, 8, 8,0.8);
-    color: white;
-    text-align: center;
-    justify-content: space-between;
-    margin-top: auto;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  left: 0;
+  bottom: 0;
+  height: 300px;
+  width: 100vw;
+  background-color: rgb(8, 8, 8,0.8);
+  color: white;
+  text-align: center;
+  justify-content: space-between;
+  margin-top: auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .footitem1 {
-    width: 400px;
-    height: 240px;
+  width: 400px;
+  height: 240px;
 }
 .footitem2 {
-    width: 400px;
-    height: 240px;
+  width: 400px;
+  height: 240px;
 }
 .footitem3 {
-    width: 400px;
-    height: 240px;
+  width: 400px;
+  height: 240px;
 }
 .footitem4 {
-    width: 400px;
-    height: 240px;
+  width: 400px;
+  height: 240px;
 }
 /*container till social media knapparna*/
 .wrapper{

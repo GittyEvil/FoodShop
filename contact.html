@@ -12,24 +12,29 @@
 
     <!--Navigation bar för sidorna-->
     <div class="navcontainer">
-        <div class="navitem-1">
-            <img style="width: 150px; height: 105px;"" src="/images/SoggyEats.png">
-        </div>
-        <div class="navitem-2">
-            <a href="index.html">Home</a>
-        </div>
-        <div class="navitem-3">
-            <a href="contact.html">Contacts</a>
-        </div>
-        <div class="navitem-4">
-            <a href="menu.html">Menu</a>
-        </div>
-        <div class="navitem-5">
-            <a href="myOrder.html">My Orders</a>
-        </div>
-        <div class="navitem-6">
-            <img style="width:50px; height:50px ;" src="/images/shop.png">
-        </div>
+      <div class="navitem-0">
+        <img style="width: 50px; height: 50px;" src="/images/character.png">
+    </div>
+    <div class="navitem-1">
+        <a href="contact.html">Contacts</a>
+    </div>
+    <div class="navitem-2">
+        <a href="index.html">Home</a>
+    </div>
+    <div class="navitem-3">
+        <a href="index.html">
+            <img style="width: 150px; height: 105px;" src="/images/SoggyEats.png">
+        </a>
+    </div>
+    <div class="navitem-4">
+        <a href="menu.html">Menu</a>
+    </div>
+    <div class="navitem-5">
+        <a href="myOrder.html">My Orders</a>
+    </div>
+    <div class="navitem-6">
+        <img style="width:50px; height:50px ;" src="/images/shop.png">
+    </div>
     </div>
 
 
@@ -48,33 +53,31 @@
                 
              </p>
             </div>
+
             <!--själva kontakt blocket-->
             <section id="contact">
                 <div class="contact-wrapper">
-                  <form id="contact-form" class="form-horizontal" role="form">
-                    <div class="form-group">
-                      <div class="col-sm-12">
-                        <input type="checkbox" id="medlem" name="medlem" value="medlem">
+                  <form>
+                    <div>
+                      <div>
+                          <input type="checkbox" id="medlem" name="medlem" value="medlem">
                           <label for="medlem">medlemskapsinfo</label>
                       </div>
                     </div>
-                    <div class="form-group">
-                      <div class="col-sm-12">
-                        <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                    <div>
+                      <div>
+                        <input type="text" class="form-control" id="name" placeholder="Namn" name="name" value="" required>
                       </div>
                     </div>
-              
-                    <div class="form-group">
-                      <div class="col-sm-12">
-                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                    <div>
+                      <div>
+                        <input type="email" class="form-control" id="email" placeholder="Email" name="email" value="" required>
                       </div>
                     </div>
-              
-                    <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
-                    
-                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                    <textarea class="form-control" rows="10" placeholder="Meddelande" name="message" required></textarea>
+                    <button class="send-button" id="submit" type="submit" value="SEND">
                       <div class="alt-send-button">
-                        <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                        <i></i><span class="send-text">SEND</span>
                       </div>
                     </button>
 
