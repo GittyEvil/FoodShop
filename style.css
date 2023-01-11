@@ -45,7 +45,7 @@ a {
 
 .navitem-1 {
   display: flex;
-  width: 200px;
+  width: 100px;
   height: 100px;
   align-items: center;
   justify-content: center;
@@ -53,20 +53,20 @@ a {
 
 .navitem-2 {
   display: flex;
-  width: 200px;
+  width: 100px;
   height: 100px;
   align-items: center;
   justify-content: center;
 }
 
 .navitem-3 {
-  width: 300px;
+  width: 100px;
   height: 100px;
 }
 
 .navitem-4 {
   display: flex;
-  width: 200px;
+  width: 100px;
   height: 100px;
   align-items: center;
   justify-content: center;
@@ -74,7 +74,7 @@ a {
 
 .navitem-5 {
   display: flex;
-  width: 200px;
+  width: 100px;
   height: 100px;
   align-items: center;
   justify-content: center;
@@ -82,11 +82,12 @@ a {
 
 .navitem-6 {
   display: flex;
-  width: 200px;
+  width: 100px;
   height: 100px;
   align-items: center;
   justify-content: center;
 }
+
 /*själva kroppen för varje sida*/
 .body {
   display: flex;
